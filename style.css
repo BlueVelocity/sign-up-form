@@ -60,7 +60,7 @@ body {
     position: relative;
     flex: 0.7;
     background-image: url("./assets/photos/mountain.jpg");
-    background-size: 1500px;
+    background-size: max(1000px, 160vh);
     background-position-x: 50%;
     height: 100%;
 }
