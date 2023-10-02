@@ -133,7 +133,7 @@ form button {
 }
 
 .header {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -180,16 +180,31 @@ label {
 }
 
 input {
-    border: 1px black solid;
+    border: 1px grey solid;
     border-radius: 5px;
     font-size: 1rem;
     padding: 0.4rem;
     width: 100%;
 }
 
+input:focus {
+    outline: 1px blue solid;
+    box-shadow: 2px 2px 4px grey;
+}
+
+input:invalid {
+    outline: 1px rgb(255, 116, 116) solid;
+}
+
+input + span:before {
+    content: '*Passwords do not match';
+    font-size: 0.8rem;
+    color: red;
+}
+
 form legend {
     padding: 1rem 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
