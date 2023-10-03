@@ -2,8 +2,8 @@ const passwordObj = document.querySelector('#password');
 const confirmPasswordObj = document.querySelector('#confirm-password');
 const noMatchIndicator = document.querySelector('span')
 
-passwordObj.addEventListener("keyup", checkIfMatching);
-confirmPasswordObj.addEventListener("keyup", checkIfMatching);
+passwordObj.addEventListener("input", checkIfMatching);
+confirmPasswordObj.addEventListener("input", checkIfMatching);
 
 passwordObj.setCustomValidity("Invalid field.")
 
