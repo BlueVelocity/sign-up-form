@@ -32,6 +32,7 @@
 
 :root {
     font-family: 'Roboto';
+    font-size: max(1.5vh, 10px);
 }
 
 html {
@@ -41,22 +42,20 @@ html {
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 15%;
+    margin: 0;
     height: 100%;
-    width: 70%;
+    width: 100%;
     background-color: rgb(24, 24, 24);
 }
 
 .main-container {
-    flex: 1;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100%;
+    max-width: max(70%, 1200px);
 }
 
 .splash {
@@ -156,6 +155,7 @@ form {
 
 fieldset {
     display: flex;
+    flex-direction: column;
     margin-right: 0px;
     border: none;
     padding: 0 7vw 0 0;
@@ -164,6 +164,8 @@ fieldset {
 fieldset div,
 label,
 input {
+    display: flex;
+    flex-direction: row;
     flex: 1;
 }
 
@@ -180,7 +182,7 @@ label {
 }
 
 input {
-    border: 1px grey solid;
+    border: 0.5px lightgrey solid;
     border-radius: 5px;
     font-size: 1rem;
     padding: 0.4rem;
