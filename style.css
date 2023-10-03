@@ -195,10 +195,16 @@ input:invalid {
     outline: 1px rgb(255, 116, 116) solid;
 }
 
-input + span:before {
+input:invalid + span:before {
     content: '*Passwords do not match';
     font-size: 0.8rem;
-    color: red;
+    color: red; 
+}
+
+input:valid + span:before {
+    content: '*Passwords match';
+    font-size: 0.8rem;
+    color: green;
 }
 
 form legend {
